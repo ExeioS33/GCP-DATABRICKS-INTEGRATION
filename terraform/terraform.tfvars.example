@@ -1,0 +1,19 @@
+# ========================================
+# TERRAFORM VARIABLES - EXEMPLE
+# Copiez ce fichier vers terraform.tfvars et adaptez les valeurs
+# ========================================
+
+# Project GCP
+project_id = "biforaplatform"
+region     = "europe-west1"
+
+# Utilisateur admin
+user_email = "andrirazafy9@gmail.com"
+
+# Storage
+bucket_name = "supdevinci_bucket"
+bucket_path = "sanda_celia"
+
+# Optionnel : autres paramètres
+# zone = "europe-west1-b"
+# environment = "production" 
