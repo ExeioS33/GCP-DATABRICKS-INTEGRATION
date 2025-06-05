@@ -4,9 +4,11 @@ Lancement direct du pipeline Dataflow
 Structure simple selon les bonnes pratiques Dataflow
 """
 
+import os
 import subprocess
 import sys
 
 if __name__ == "__main__":
     # Lance directement le pipeline unifié
-    subprocess.run([sys.executable, "dataflow_pipeline_unified.py"] + sys.argv[1:]) 
+    script_path = os.path.join(os.path.dirname(__file__), "..", "src", "dataflow_pipeline_unified.py")
+    subprocess.run([sys.executable, script_path] + sys.argv[1:]) 

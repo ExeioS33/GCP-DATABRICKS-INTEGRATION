@@ -4,6 +4,7 @@ Lancement du générateur CSV ultra-rapide
 Alternative high-performance au pipeline Dataflow
 """
 
+import os
 import subprocess
 import sys
 import time
@@ -37,7 +38,8 @@ def main():
     start_time = time.time()
     
     # Lancer le générateur rapide
-    result = subprocess.run([sys.executable, "generate_csv_fast.py"])
+    script_path = os.path.join(os.path.dirname(__file__), "..", "src", "generate_csv_fast_fixed.py")
+    result = subprocess.run([sys.executable, script_path])
     
     if result.returncode == 0:
         duration = time.time() - start_time
