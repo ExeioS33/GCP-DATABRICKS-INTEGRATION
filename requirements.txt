@@ -1,23 +1,8 @@
-# Dépendances pour le pipeline de génération de données GCP/Databricks
-# =====================================================================
+# Dépendances optimisées pour Apache Beam/Dataflow
+# Versions stables testées pour éviter les problèmes de compilation
 
-# Apache Beam pour les pipelines de données
-apache-beam[gcp]==2.53.0
+# Apache Beam avec extensions GCP
+apache-beam[gcp]==2.65.0
 
-# Génération de données synthétiques
-faker==20.1.0
-
-# Google Cloud SDK et outils
-google-cloud-storage==2.10.0
-google-auth==2.23.4
-
-# Outils de développement et formatage
-pandas==2.1.4
-numpy==1.24.4
-
-# Logging et monitoring
-structlog==23.2.0
-
-# Tests (optionnel)
-pytest==7.4.3
-pytest-cov==4.1.0 
+# Génération de données synthétiques - version stable
+faker==19.13.0 
